@@ -1,0 +1,64 @@
+doctype
+html(lang='de')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(property="og:title" content="De - Ko Übersetzer")
+    meta(property="og:description" content="Mobiltelefon, Desktop verfügbar, Chrom Browser erforderlich")
+    meta(property="og:image" content="/static/images/home.png")
+     //- 반응형 설정
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="shortcut icon" href="https://was-sagst-du.herokuapp.com/static/images/favicon.png")
+    script(src="https://kit.fontawesome.com/03953410b5.js" crossorigin="anonymous")
+    title Howto
+    link(rel='stylesheet', type='text/css', href=`/static/styles/How.css`)
+  body#body
+    header#header
+      div#pagechange
+        a(href="/")
+          i(class="fas fa-home fa-2x" id="backtohome")
+    div#Document 
+      h1#superTitle Einstellung
+      div#caution
+        h4(style={color: "red"}) 
+          i(class="fas fa-exclamation-triangle")
+            |   Achtung
+            p
+            | Derzeit ist diese Website nur in den Browsern Chrome, Safari, Edge und Brave verfügbar.     
+      div#Button
+        input(type="button", value="mobile", id="mobileBtn")  
+        input(type="button", value="desktop", id="desktopBtn")            
+      h2#comSet Desktop Einstellung -1
+      div.description
+        img(src="/static/images/mic setting.gif")
+        p.description_script
+          | Stellen Sie zunächst sicher, dass das Mikrofon Ihres Computers richtig eingesteckt ist. Wenn es normal ist, sollte es sich bewegen, wenn die Lautstärke spricht, wie auf dem Foto oben. Kaufen Sie am besten ein 30Euro-Pin-Mikrofon und schließen Sie es an einen Laptop an. Es ist viel besser erkennbar, als es nur mit einem Laptop zu tun.
+      h2 Desktop Einstellung -2
+      div.description
+        img(src="/static/images/mic vol setting.gif")
+        p.description_script
+          | Sieht es nicht so aus wie oben? Dann ist entweder das Mikrofon ausgeschaltet oder die Lautstärke ist zu niedrig. Doppelklicken Sie auf das Mikrofon, das Sie zum Eingeben der Einstellungen verwenden, und erhöhen Sie dann die Lautstärke, wie in der Abbildung daneben gezeigt. 
+      h2 Desktop Einstellung -3
+      div.description
+        img#web(src="/static/images/web mic setting.gif")
+        p.description_script
+          | Wenn Sie die Site zum ersten Mal betreten, erlauben Sie bitte, dass sie um die Erlaubnis zum Mikrofon bittet. Haben Sie auf Ablehnen geklickt? Dann müssen Sie zu den Chrome-Einstellungen gehen und erneut die Erlaubnis geben. Wenn Sie Ihre Erlaubnis erteilt haben, stellen Sie bitte das Mikrofon, das Sie gerade verwenden, wie im Bild links ein. Dann wird es erkannt.
+      h2#mobSet Mobile Einstellung
+      div.Android_description
+        img#AndWeb(src="/static/images/android_web.gif")
+        p.description_script
+          | 1. Installieren Sie die Google App aus dem Google App Store.
+        p.description_script
+          | 2. Benutzen Sie im Chrome-Browser, Samsung-Browser oder Safari auf die Website. Dann können Sie es wie das Bild oben verwenden.
+        p.description_script
+          | * Derzeit gibt es ein Phänomen, bei dem es im Safari-Browser des Mobiltelefons nicht normal verwendet werden kann. In diesem Fall empfehlen wir die Verwendung des Chrome-Browsers.
+      div(style="text-align:center;")
+        h2 wenn Fehler vorhanden...
+        p 1. Gibt es derzeit zwei Tabs, die das Mikrofon verwenden? Lassen Sie eine Tab und versuchen Sie die Aktualisierung. 5 mal drücken
+        p 2. Wenn dies nicht funktioniert, deaktivieren Sie Chrome und versuchen Sie erneut, auf die Website zuzugreifen.
+        p 3. Sollte dies nicht funktionieren, teilen Sie uns den Fehler bitte per E-Mail unten mit. 
+        p dntjrdl@knou.ac.kr 
+
+      a#usageLink(href="/Usage")  
+  script(src=`/static/scripts/How.js` type="text/javascript") 
+
